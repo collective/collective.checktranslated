@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '1.0'
 
@@ -7,13 +6,13 @@ setup(name='collective.checktranslated',
       version=version,
       description="This products make a table with all your content and their translation.",
       long_description=open("README.rst").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+                       open("CHANGES.txt").read(),
       # Get more strings from
       # http://pypi.python.org/pypi?:action=list_classifiers
       classifiers=[
-        "Framework :: Plone",
-        "Programming Language :: Python",
-        ],
+          "Framework :: Plone",
+          "Programming Language :: Python",
+      ],
       keywords='',
       author='Benoit SUTTOR',
       author_email='bsuttor@cirb.irisnet.be',
@@ -22,10 +21,15 @@ setup(name='collective.checktranslated',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['collective'],
       include_package_data=True,
-      zip_safe=False,
+      extras_require = {
+          'test': [
+              'plone.app.testing',
+          ]
+      },     zip_safe=False,
       install_requires=[
           'setuptools',
-          # -*- Extra requirements: -*-
+          'Products.LinguaPlone',
+          'collective.jekyll',
       ],
       entry_points="""
       # -*- Entry points: -*-
@@ -33,4 +37,4 @@ setup(name='collective.checktranslated',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      )
+     )

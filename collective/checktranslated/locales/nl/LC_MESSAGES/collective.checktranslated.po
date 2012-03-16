@@ -1,0 +1,62 @@
+# #############################################################################
+#
+# Copyright (c) 2003-2004 Zope Foundation and Contributors.
+# All Rights Reserved.
+#
+# This software is subject to the provisions of the Zope Public License,
+# Version 2.1 (ZPL).  A copy of the ZPL should accompany this distribution.
+# THIS SOFTWARE IS PROVIDED "AS IS" AND ANY AND ALL EXPRESS OR IMPLIED
+# WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+# WARRANTIES OF TITLE, MERCHANTABILITY, AGAINST INFRINGEMENT, AND FITNESS
+# FOR A PARTICULAR PURPOSE.
+#
+# #############################################################################
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"POT-Creation-Date: Fri Mar 16 10:49:26 2012\n"
+"PO-Revision-Date: 2012-03-16 10:56+0100\n"
+"Last-Translator: bsuttor <bsuttor@cirb.irisnet.be>\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: zope/app/locales/extract.py\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: collective.checktranslated:/symptoms.py:18
+msgid "EN translated"
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:27
+msgid "FR translated"
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:43
+msgid "This is the current language."
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:46
+msgid "There is only one language installed on your site ({0})."
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:49
+msgid "{0} is not installed on your site."
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:56
+msgid "This is a neutral language object."
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:59
+msgid "There is no {0} translation"
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:62
+msgid "All right."
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:9
+msgid "NL translated"
+msgstr ""

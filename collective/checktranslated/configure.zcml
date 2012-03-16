@@ -14,6 +14,34 @@
       description="Installs the collective.checktranslated package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
-  <!-- -*- extra stuff goes here -*- -->
   
+  <genericsetup:importStep
+      name="collective.checktranslated.setuphandlers"
+      title="collective.checktranslated test collection"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler=".setuphandlers.setupVarious">
+  </genericsetup:importStep>
+
+
+  <include package="collective.jekyll" />
+
+  <subscriber
+     for="Products.CMFCore.interfaces.IMinimalDublinCore"
+     provides="collective.jekyll.interfaces.ISymptom"
+     factory=".symptoms.HasTranslatedNL"
+     />
+
+  <subscriber
+     for="Products.CMFCore.interfaces.IMinimalDublinCore"
+     provides="collective.jekyll.interfaces.ISymptom"
+     factory=".symptoms.HasTranslatedEN"
+     />
+
+  <subscriber
+     for="Products.CMFCore.interfaces.IMinimalDublinCore"
+     provides="collective.jekyll.interfaces.ISymptom"
+     factory=".symptoms.HasTranslatedFR"
+     />
+
+
 </configure>
