@@ -34,11 +34,12 @@ class HasTranslatedFR(SymptomBase):
 
 
 def check_translated(context, languages, lang):
+    site_languages = languages
     current_lang = context.Language()
     status=''
     description=''
-    if current_lang:
-        languages.remove(current_lang)
+    if len(site_languages) > 1 and current_lang in site_languages:
+        site_languages.remove(current_lang)
     else:
         status = False
         description = _(u"This is a neutral language object.")

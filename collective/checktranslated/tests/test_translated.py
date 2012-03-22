@@ -31,10 +31,10 @@ class TestTranslated(unittest.TestCase):
     def test_current_language(self):
         site = self.layer['portal']
         setRoles(site, TEST_USER_ID, ('Manager',))
-        site.invokeFactory(type_name="Folder", id="object_current_test", language="fr")
+        site.invokeFactory(type_name="Folder", id="object_current_test", language="en")
         fr_object = site.object_current_test
         
-        status, description  = check_translated(fr_object, self.site_languages, 'fr')
+        status, description  = check_translated(fr_object, self.site_languages, 'en')
         self.assertTrue(status)
 
     def test_translated(self):
@@ -46,10 +46,12 @@ class TestTranslated(unittest.TestCase):
 
         site.invokeFactory(type_name="Document", id="nl", language="nl")
         nl = site.nl
-        nl.addTranslationReference(fr)
+        fr.addTranslationReference(nl)
 
+        self.site_languages = ['fr', 'nl']
         status, description  = check_translated(fr, self.site_languages, 'nl')
         self.assertTrue(status)
-        
-        #status, description  = check_translated(nl_object, self.site_languages, 'fr')
-        #self.assertTrue(status)
+
+        self.site_languages = ['fr', 'nl']
+        status, description  = check_translated(nl, self.site_languages, 'fr')
+        self.assertTrue(status)
