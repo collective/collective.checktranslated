@@ -33,7 +33,7 @@ class TestTranslated(unittest.TestCase):
         setRoles(site, TEST_USER_ID, ('Manager',))
         site.invokeFactory(type_name="Folder", id="object_current_test", language="en")
         fr_object = site.object_current_test
-        
+
         status, description  = check_translated(fr_object, self.site_languages, 'en')
         self.assertTrue(status)
 
