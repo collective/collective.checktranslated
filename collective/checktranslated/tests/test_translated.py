@@ -4,9 +4,9 @@ import unittest2 as unittest
 from collective.checktranslated.symptoms import check_translated
 from collective.checktranslated.testing import CHECKTRANSLATED_INTEGRATION
 
-
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import setRoles
+
 
 class TestTranslated(unittest.TestCase):
     site_languages = ['fr', 'en', 'nl']
@@ -42,14 +42,13 @@ class TestTranslated(unittest.TestCase):
         setRoles(site, TEST_USER_ID, ('Manager',))
         site.invokeFactory(type_name="Document", id="fr", language="fr")
         fr = site.fr
-        
 
         site.invokeFactory(type_name="Document", id="nl", language="nl")
         nl = site.nl
         fr.addTranslationReference(nl)
 
         self.site_languages = ['fr', 'nl']
-        status, description  = check_translated(fr, self.site_languages, 'nl')
+        status  = check_translated(fr, self.site_languages, 'nl')
         self.assertTrue(status)
 
         self.site_languages = ['fr', 'nl']
