@@ -14,6 +14,7 @@ class HasTranslatedNL(SymptomBase):
         languages = site.portal_languages.getAvailableLanguages().keys()
         self.status, self.description = check_translated(self.context, languages, 'nl')
 
+
 class HasTranslatedEN(SymptomBase):
     title = _(u"EN translated")
     help = _(u"")
@@ -22,6 +23,7 @@ class HasTranslatedEN(SymptomBase):
         site = getSite()
         languages = site.portal_languages.getAvailableLanguages().keys()
         self.status, self.description = check_translated(self.context, languages, 'en')
+
 
 class HasTranslatedFR(SymptomBase):
     title = _(u"FR translated")
