@@ -36,8 +36,8 @@ class HasTranslatedFR(SymptomBase):
 def check_translated(context, languages, lang):
     site_languages = languages
     obj_lang = context.Language()
-    status=''
-    description=''
+    status = ''
+    description = ''
     if len(site_languages) == 1 and obj_lang != '':
         status = False
         description = _(u"There is only one language installed on your site ({0}).".format(obj_lang))
