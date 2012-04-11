@@ -61,4 +61,3 @@ def check_translated(context, languages, lang):
                 description = _(u"All right.")
 
     return status, description
-
