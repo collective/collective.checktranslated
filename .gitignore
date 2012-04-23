@@ -10,3 +10,4 @@ bin
 .installed.cfg
 .mr.developer.cfg
 *.swp
+*.*~

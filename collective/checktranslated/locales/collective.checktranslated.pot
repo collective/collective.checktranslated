@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Fri Mar 16 10:49:26 2012\n"
+"POT-Creation-Date: Mon Apr 23 10:10:38 2012\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: Zope 3 Developers <zope-dev@zope.org>\n"
@@ -23,35 +23,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: zope/app/locales/extract.py\n"
 
-#: collective.checktranslated:/symptoms.py:18
+#: collective.checktranslated:/symptoms.py:19
 msgid "EN translated"
 msgstr ""
 
-#: collective.checktranslated:/symptoms.py:27
+#: collective.checktranslated:/symptoms.py:29
 msgid "FR translated"
 msgstr ""
 
-#: collective.checktranslated:/symptoms.py:43
-msgid "This is the current language."
-msgstr ""
-
-#: collective.checktranslated:/symptoms.py:46
+#: collective.checktranslated:/symptoms.py:45
 msgid "There is only one language installed on your site ({0})."
 msgstr ""
 
-#: collective.checktranslated:/symptoms.py:49
-msgid "{0} is not installed on your site."
-msgstr ""
-
-#: collective.checktranslated:/symptoms.py:56
+#: collective.checktranslated:/symptoms.py:48
 msgid "This is a neutral language object."
 msgstr ""
 
-#: collective.checktranslated:/symptoms.py:59
+#: collective.checktranslated:/symptoms.py:51
+msgid "This is the current language."
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:54
+msgid "{0} is not installed on your site."
+msgstr ""
+
+#: collective.checktranslated:/symptoms.py:60
 msgid "There is no {0} translation"
 msgstr ""
 
-#: collective.checktranslated:/symptoms.py:62
+#: collective.checktranslated:/symptoms.py:63
 msgid "All right."
 msgstr ""
 
