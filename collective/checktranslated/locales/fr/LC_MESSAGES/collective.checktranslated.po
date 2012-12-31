@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.0\n"
-"POT-Creation-Date: Mon Apr 23 10:10:38 2012\n"
+"POT-Creation-Date: Mon Dec 31 10:29:23 2012\n"
 "PO-Revision-Date: 2012-03-16 10:55+0100\n"
 "Last-Translator: bsuttor <bsuttor@cirb.irisnet.be>\n"
 "Language-Team: French\n"
@@ -25,38 +25,30 @@ msgstr ""
 "Generated-By: zope/app/locales/extract.py\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: collective.checktranslated:/symptoms.py:19
-msgid "EN translated"
-msgstr ""
+#: collective.checktranslated:/symptoms.py:11
+msgid "Translation"
+msgstr "Traduction"
+
+#: collective.checktranslated:/symptoms.py:12
+msgid "This object should be translated into all site languages"
+msgstr "Cette objet doit être traduit dans toutes les langues du site."
 
 #: collective.checktranslated:/symptoms.py:29
-msgid "FR translated"
-msgstr ""
+msgid "There is only one language installed on your site."
+msgstr "Il y a seulement une langue installée sur le site."
 
-#: collective.checktranslated:/symptoms.py:45
-msgid "There is only one language installed on your site ({0})."
-msgstr ""
-
-#: collective.checktranslated:/symptoms.py:48
+#: collective.checktranslated:/symptoms.py:33
 msgid "This is a neutral language object."
-msgstr ""
+msgstr "C'est une object avec un langue neutre."
 
-#: collective.checktranslated:/symptoms.py:51
-msgid "This is the current language."
-msgstr ""
+#: collective.checktranslated:/symptoms.py:38
+msgid "Language not installed."
+msgstr "Langue non installée"
 
-#: collective.checktranslated:/symptoms.py:54
-msgid "{0} is not installed on your site."
-msgstr ""
-
-#: collective.checktranslated:/symptoms.py:60
+#: collective.checktranslated:/symptoms.py:46
 msgid "There is no {0} translation"
-msgstr ""
+msgstr "Il n'y a pas de traduction"
 
-#: collective.checktranslated:/symptoms.py:63
-msgid "All right."
-msgstr ""
-
-#: collective.checktranslated:/symptoms.py:9
-msgid "NL translated"
-msgstr ""
+#: collective.checktranslated:/symptoms.py:49
+msgid "Translated into all languages."
+msgstr "Traduit dans toutes les langues."

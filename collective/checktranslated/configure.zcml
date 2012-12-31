@@ -28,20 +28,7 @@
   <subscriber
      for="Products.CMFCore.interfaces.IMinimalDublinCore"
      provides="collective.jekyll.interfaces.ISymptom"
-     factory=".symptoms.HasTranslatedNL"
+     factory=".symptoms.HasTranslated"
      />
-
-  <subscriber
-     for="Products.CMFCore.interfaces.IMinimalDublinCore"
-     provides="collective.jekyll.interfaces.ISymptom"
-     factory=".symptoms.HasTranslatedEN"
-     />
-
-  <subscriber
-     for="Products.CMFCore.interfaces.IMinimalDublinCore"
-     provides="collective.jekyll.interfaces.ISymptom"
-     factory=".symptoms.HasTranslatedFR"
-     />
-
 
 </configure>
