@@ -9,12 +9,13 @@ STATUS = {'correct': True, 'warning': 'warning', 'error': False}
 
 class HasTranslated(SymptomBase):
     title = _(u"Translation")
-    help = _(u"This object should be translated into all site languages")
+    help = _(u"This object should be translated into all site languages.")
 
     def _update(self):
         site = getSite()
         languages = site.portal_languages.getAvailableLanguages().keys()
-        self.status, self.description = check_translated(self.context, languages)
+        self.status, self.description = check_translated(self.context,
+                                                              languages)
 
 
 def check_translated(context, languages):
