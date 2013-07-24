@@ -31,15 +31,15 @@ msgstr "Traduction"
 
 #: collective.checktranslated:/symptoms.py:12
 msgid "This object should be translated into all site languages."
-msgstr "Cette objet doit être traduit dans toutes les langues du site."
+msgstr "Cet objet doit être traduit dans toutes les langues du site."
 
 #: collective.checktranslated:/symptoms.py:30
 msgid "There is only one language installed on your site."
-msgstr "Il y a seulement une langue installée sur le site."
+msgstr "Il n'y a qu'une seule langue installée sur le site."
 
 #: collective.checktranslated:/symptoms.py:35
 msgid "This is a neutral language object."
-msgstr "C'est une object avec un langue neutre."
+msgstr "Cet objet est indépendant de la langue sélectionnée."
 
 #: collective.checktranslated:/symptoms.py:41
 msgid "Language not installed."
