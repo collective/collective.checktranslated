@@ -1,7 +1,7 @@
 # -*- extra stuff goes here -*-
 
 from zope.i18nmessageid import MessageFactory
-checktranslatedMessageFactory = MessageFactory('collective.checktranslated')
+checktranslatedMessageFactory = MessageFactory('collective.jekyll')
 
 
 def initialize(context):

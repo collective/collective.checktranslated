@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from zope.component.hooks import getSite
+from zope.i18nmessageid import Message
 from collective.jekyll.symptoms import SymptomBase
 
 from collective.checktranslated import checktranslatedMessageFactory as _
@@ -47,8 +48,9 @@ def check_translated(context, languages):
             translate_context = context.getTranslation(lang)
             if translate_context is None:
                 status = STATUS['error']
-                msgid = _(u"There is no {0} translation".format(lang))
-                description.append(context.translate(msgid))
+                msgid = _(u"There is no ${language} translation")
+                msg = Message(msgid, mapping=dict(language=lang))               
+                description.append(context.translate(msg))
     if len(description) == 0:
         status = STATUS['correct']
         msgid = _(u"Translated into all languages.")

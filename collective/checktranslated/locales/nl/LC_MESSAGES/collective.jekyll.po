@@ -46,7 +46,7 @@ msgid "Language not installed."
 msgstr ""
 
 #: collective.checktranslated:/symptoms.py:50
-msgid "There is no {0} translation"
+msgid "There is no ${language} translation"
 msgstr ""
 
 #: collective.checktranslated:/symptoms.py:54
