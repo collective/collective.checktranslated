@@ -11,3 +11,4 @@ bin
 .mr.developer.cfg
 *.swp
 *.*~
+*.mo
