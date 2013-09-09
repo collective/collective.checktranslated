@@ -27,28 +27,28 @@ msgstr ""
 
 #: collective.checktranslated:/symptoms.py:11
 msgid "Translation"
-msgstr ""
+msgstr "Vertaling"
 
 #: collective.checktranslated:/symptoms.py:12
 msgid "This object should be translated into all site languages."
-msgstr ""
+msgstr "Dit object moet vertaald worden in alle talen van de website"
 
 #: collective.checktranslated:/symptoms.py:30
 msgid "There is only one language installed on your site."
-msgstr ""
+msgstr "Er is maar één taal geïnstalleerd op de website"
 
 #: collective.checktranslated:/symptoms.py:35
 msgid "This is a neutral language object."
-msgstr ""
+msgstr "Dit object is taal-neutraal"
 
 #: collective.checktranslated:/symptoms.py:41
 msgid "Language not installed."
-msgstr ""
+msgstr "Taal niet geïnstalleerd"
 
 #: collective.checktranslated:/symptoms.py:50
 msgid "There is no ${language} translation"
-msgstr ""
+msgstr "Er is geen vertaling voor ${language}"
 
 #: collective.checktranslated:/symptoms.py:54
 msgid "Translated into all languages."
-msgstr ""
+msgstr "Vertaald in alle talen"
